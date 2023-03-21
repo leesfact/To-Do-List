@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header-container">
+           <h1 class="header-title"><i class="fa-solid fa-pen-to-square"></i>TO-DO LIST </h1>
+        </header>
+    
+
+        <div>
+            <div class="state-box">
+                <input type="button" class="state-button btn-all" value="전체 : 0">
+                <input type="button" class="state-button btn-ing" value="진행 중 : 0">
+                <input type="button" class="state-button btn-cpt" value="완료 : 0">
+            </div>
+            <div class="todo-container">
+                <div class="add-box">
+                    <div class="text-container">
+                        <input type="text" class="add-text" placeholder="새로 작성하기">
+                        <button class="plus-button"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="all-checkbox">
+                    <label class="all-select-label"><input type="checkbox" class="all-select">전체선택</label>
+                    <a href="javascript:void(0)" class="all-delete">전체삭제</a>
+                </div>
+                <div class="list-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/todo.js"></script>
+    <script src="./js/app.js"></script>
+    
+</body>
+</html>
