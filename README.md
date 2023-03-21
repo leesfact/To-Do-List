@@ -2,7 +2,7 @@
 
 #
 
-
+-----------------------
 
 ### 초기 화면
 ![image](https://user-images.githubusercontent.com/121993153/226553401-66307af0-3831-487b-8934-5fc2700f80cb.png)
@@ -13,10 +13,14 @@
 ### 작성 화면
 ![image](https://user-images.githubusercontent.com/121993153/226553893-17432d9e-9970-4ce7-a0af-3faacee067f7.png)
 
-### `완료 화면`
+### 완료 화면
 ![image](https://user-images.githubusercontent.com/121993153/226554238-23b231ab-09d2-4f70-bb44-203f3be9818b.png)
 
-### 기타 기능
-- 
--
--
+### 기능
+- 전체 선택
+- 전체 삭제
+
+
+-----------------------
+
+# 제작 후기
