@@ -1,7 +1,24 @@
 # To-Do-List 만들기
 
-#
+<div>
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+</div>
 
+# 소개
+
+HTML / CSS / JavaScript 를 활용한 To-Do list를 제작
+
+수업시간에 배운 내용으로는 더 복잡한 기능들이 많지만, 복습하는것에 목적을 두고 기본 기능 구현에 중점을 두었다.
+
+요구사항
+- Todo 입력란
+- 입력란에 입력값이 없이 Enter 또는 + 버튼 클릭 시, Err 문구 
+- 전체, 진행, 완료 상태를 체크 
+- 개별 삭제 및 전체 삭제
+- 전체 선택 
+- JS 코드 작성 시, **Class** 와 **Singleton**을 사용, 기능에 대한 메서드를 분리할 것
 -----------------------
 
 ### 초기 화면
