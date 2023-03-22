@@ -1,4 +1,4 @@
-# To-Do-List 만들기
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&width=435&lines=To-Do-List+%EB%A7%8C%EB%93%A4%EA%B8%B0)](https://git.io/typing-svg)
 
 <div>
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
