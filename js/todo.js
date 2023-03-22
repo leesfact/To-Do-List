@@ -108,7 +108,8 @@ class TodoEvent {
         allDelete.onclick = () => {
             listContainer.innerHTML = ``;
             allSelect.checked = false;
-            TodoService.getInstance().listCount();
+            TodoService.getInstance().todoList = []; // todoList를 빈 배열로 초기화
+            TodoService.getInstance().updateLocalStorage(); // localStorage에도 빈 배열로 저장
         }
     }
 }
@@ -124,14 +125,33 @@ class TodoService {
         return this.#instance;
     }
 
+    todoList = null;
+
+    constructor() {
+        if(localStorage.getItem("TODO") == null) {
+            this.todoList = new Array();
+        } else {
+            this.todoList = JSON.parse(localStorage.getItem("TODO"));
+        }
+        this.loadTodoList();
+    }
+
+    updateLocalStorage() {
+        localStorage.setItem("TODO", JSON.stringify(this.todoList));
+        this.loadTodoList();
+    }
+
     addList() {
         const addText = document.querySelector(".add-text");
         if (addText.value !== "") {
-            const list = document.createElement("div");
-            list.setAttribute("class", "list");
-            list.innerHTML = `<label class="list-label"><input type="checkbox" class="list-check">${addText.value}</label><button class="delete-button">x</button>`;
-            const listContainer = document.querySelector(".list-container");
-            listContainer.appendChild(list);
+
+            const todoObj = {
+                todoContent: addText.value
+            }
+    
+            this.todoList.push(todoObj);
+            this.updateLocalStorage();
+            
             addText.value = "";
             addText.style.borderBottom = "1px solid rgb(163, 155, 155)";
     
@@ -153,6 +173,23 @@ class TodoService {
                 addBox.appendChild(noticeErr);
             }
         }
+        
+    }
+
+    loadTodoList() {
+        const listContainer = document.querySelector(".list-container");
+        listContainer.innerHTML = "";
+    
+        this.todoList.forEach((todoObj) => {
+            const list = document.createElement("div");
+            list.setAttribute("class", "list");
+            list.innerHTML = `<label class="list-label"><input type="checkbox" class="list-check">${todoObj.todoContent}</label><button class="delete-button">x</button>`;
+            listContainer.appendChild(list);
+        });
+    
+        this.checkList();
+        this.deleteList();
+        this.listCount();
     }
 
     checkList() {
@@ -181,6 +218,8 @@ class TodoService {
         deleteButton.forEach((deleteElement,index) => {
             deleteElement.onclick = () => {
                 listElements[index].remove();
+                this.todoList.splice(index, 1); // 해당 아이템을 todoList에서 삭제
+                this.updateLocalStorage(); // localStorage에서도 해당 아이템을 삭제
                 this.listCount();
             }
         });
@@ -217,6 +256,7 @@ class TodoService {
 
         return listElements;
     }
-
     
+
+
 }
