@@ -19,7 +19,7 @@ HTML / CSS / JavaScript 를 활용한 To-Do list를 제작
 - 개별 삭제 및 전체 삭제
 - 전체 선택 
 - JS 코드 작성 시, **Class** 와 **Singleton**을 사용, 기능에 대한 메서드를 분리할 것
-- 추가) 23.03.22 - 입력시, local Storage 에 Key, Value 값으로 저장되며, 새로고침(F5)해도 TODO List 유지 
+- 추가) 23.03.22 - 입력시, **Local Storage** 에 Key, Value 값으로 저장되며, 새로고침(F5)해도 TODO List 유지 
 -----------------------
 
 ### 초기 화면
@@ -37,6 +37,7 @@ HTML / CSS / JavaScript 를 활용한 To-Do list를 제작
 ### 기능
 - 전체 선택
 - 전체 삭제
+- (추가) Local Storage 에 To Do List 저장 기능
 
 
 -----------------------
