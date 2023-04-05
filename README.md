@@ -51,4 +51,4 @@ HTML / CSS / JavaScript 를 활용한 To-Do list를 제작
  
  [데모 페이지] (https://leesfact.github.io/To-Do-List/)
  
- [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=leesfact&tag=project&color=black)](https://velog.io/@leesfact/AWS-BACK-DAY-56.-JavaScript-ToDoList-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+ [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=leesfact&tag=project&color=dark)](https://velog.io/@leesfact/AWS-BACK-DAY-56.-JavaScript-ToDoList-%EB%A7%8C%EB%93%A4%EA%B8%B0)
